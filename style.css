@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: hsl(204, 43%, 93%);
+  overflow: hidden;
+}
+
+.main {
+  width: 55%;
+  height: fit-content;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.main .top {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 5px;
+}
+
+.top-head {
+  font-size: 25px;
+  font-weight: 700;
+  word-spacing: 2px;
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 25px;
+}
+
+.about .about-top {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-size: 21px;
+}
+
+.about .about-bottom {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  background-position: center;
+  background-size: contain;
+}
+
+.bottom .left {
+  background: hsl(179, 62%, 43%);
+  width: 50%;
+  color: white;
+  padding: 35px 40px;
+  text-align: left;
+  border-bottom-left-radius: 5px;
+}
+
+.bottom .left .left-top {
+  font-size: 21px;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+.bottom .left .price {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.bottom .left .price .price2 {
+  color: white;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.bottom .left .price .price1 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-right: 15px;
+  color: white;
+}
+
+.bottom .left .sign-up-button {
+  padding: 15px;
+  width: 85%;
+  text-align: center;
+  background: hsl(71, 73%, 54%);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  margin: 20px;
+  margin-left: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bottom .right {
+  background: hsl(179, 52%, 63%);
+  width: 50%;
+  padding: 35px 40px;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.bottom .right .right-top {
+  font-weight: 700;
+  font-size: 21px;
+  padding-bottom: 15px;
+}
+
+.bottom .right .why-us {
+  opacity: 0.65;
+  line-height: 1.45;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    position: unset;
+    transform: translate(0, 0);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .bottom {
+    display: block;
+  }
+
+  .bottom .left {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .bottom .right {
+    width: 100%;
+  }
+}
